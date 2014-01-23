@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/hazaha.css" />
+<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile.structure.min.css" />
+<!-- Tiada themes--><!--
+<link href="css/jquery.mobile.min.css" rel="stylesheet" type="text/css">
+-->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+</head>
+<body>
+<!--Page 1 -->
+<div data-role="page" id="page1">
+	<!--header -->
+	<!-- <div data-role="header" data-position="fixed">
+		<h3>Utama</h3>
+	</div>   -->
+  	<!--content -->
+	<div role="main" class="ui-content">
+		<center> <!-- Untuk Centerkan Page -->
+		<h3> Selamat Datang Ke Web Mobile  </h3>
+		<img src="gambar/logomoh.jpg" />
+		<p><h4> Kementerian Kesihatan Malaysia </h4> </p>
+		<p><h4> Hospital Tengku Ampuan Rahimah, Klang, Selangor </h4> </p>
+		<!-- Button Masuk --> 
+		<a href="#page2" class="ui-btn">Enter</a>
+		</center>
+		<a href="#page2" class="ui-btn ui-btn-inline">Sejarah</a>
+		<a href="#page3" class="ui-btn ui-btn-inline">Peranan</a>
+		<a href="#page4" class="ui-btn ui-btn-inline">Direktori</a>
+	</div>
+	<!--footer -->
+	<!--<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#page2" data-icon="grid">Sejarah</a></li>
+				<li><a href="#page3" data-icon="star" class="ui-btn-active">Peranan</a></li>
+				<li><a href="#page4" data-icon="gear">Direktori</a></li>
+			</ul>
+		</div><!-- /navbar
+	</div>-->
+</div>
+<!--Page 2-->
+<div data-role="page" id="page2">
+	<!--Panel-->
+	<div data-role="panel" id="panel1" data-display="overlay">
+	<h3>Senarai Menu</h3>
+	<br />
+		<ul data-role="listview">
+			<li><a href="#page2">Sejarah</a></li>
+			<li><a href="#page3">Peranan</a></li>
+			<li><a href="#page4">Direktori</a></li>
+		</ul>
+	</div>
+<!--header -->
+	<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="true">
+		<a href="#panel1" data-icon="bars" data-icompos="notext">Menu</a>
+		<h3>Sejarah</h3>
+	</div>
+  <!--content -->
+  <div role="main" class="ui-content">
+		<center> <!-- Untuk Centerkan Page -->
+		<h3> Permulaan </h3>s
+		<img src="gambar/Klang-tar-hospital.jpg" />
+		<img src="gambar/Klang-tar-hospital2.jpg" />
+		<h3> Penubuhan </h3>
+		</center>
+		<h5>Hospital Daerah Klang telah dibina pada tahun 1890an di atas sebuah 
+		anak bukit berhampiran dengan bangunan-bangunan kerajaan dan perdagangan. 
+		Pegawai Perubatan (District Surgeon to the Coast District) pertama yang 
+		bertanggungjawab ke atas hospital ini ialah Dr.Watson diikuti oleh 
+		Dr. Reid (16/1/1908 hingga 25/3/1908) dan seterusnya Dr. Gerrard dan 
+		Dr. Millard. Mulai 1 Januari 1976, hospital ini telah dinaiktarafkan 
+		kepada Hospital Besar Klang dan diketuai oleh seorang Penguasa Perubatan</h5>
+		<center>
+		<!--Pop-up-->
+		<!-- <a href="#pop1" data-rel="popup" class="ui-btn ui-corner-all-shadow 
+		ui-btn-inline" data-transition="pop">Peranan</a> -->
+  
+		<!-- Button Masuk -->
+		<a href="#page3" class="ui-btn ui-btn-inline">Enter</a>
+		</center>
+		<!--<a href="#page1">Utama</a>
+		<a href="#page3">Peranan</a>-->
+		<!--Pop-up & Dialog Pop-up-->
+		<a href="#pop1" class="ui-btn ui-btn-inline" data-rel="popup" data-transition="pop">Visi & Misi</a>
+		<div data-role="popup" id="pop1" data-dismissible="false" style="max-width:400px;">
+			<div data-role="header">
+			<h3>Visi $ Misi</h3>
+			</div>
+			<div role="main" class="ui-content"></div>
+			<!--Close Pop-up-->
+				<!--
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow 
+				ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				-->
+				<h3>Visi</h3>
+				<p>To be leading organization in providing innovative and holistic 
+				health care.</p>
+				<h3>Misi</h3>
+				<p>Memberi perkhidmatan berkualiti, professional dan 
+				penyayang untuk memenuhi keperluan dan ekspektasi semua pelanggan</p>
+				<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" 
+				data-rel="back">Kembali</a>
+				<a href="#page3" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" 
+				data-transition="flow">Peranan</a>
+		
+			</div>
+			<!--Dialog Pop-up--><!--
+			<a href="#popupDialog" data-rel="popup" data-position-to="window" 
+			data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline 
+			ui-btn-b">Pilihan Menu</a>
+			<div data-role="popup" id="popupDialog" data-overlay-theme="b" 
+			data-theme="b" data-dismissible="false" style="max-width:400px;">
+			<div data-role="header" data-theme="a">
+			<h1>Tindakan Selanjutnya...</h1>
+			</div>
+			<div role="main" class="ui-content">
+			<h3 class="ui-title">Anda mahu kemana?</h3>
+			<p>Sila pilih pilihan anda.</p>
+			<a href="#page1" class="ui-btn ui-corner-all ui-shadow ui-btn-inline 
+			ui-btn-b" data-rel="back">Utama</a>
+			<a href="#page3" class="ui-btn ui-corner-all ui-shadow ui-btn-inline 
+			ui-btn-b" data-rel="back" data-transition="flow">Peranan</a>
+			</div>
+			</div>-->
+		</div>
+		<a href="#page1" class="ui-btn ui-btn-inline" data-transition="pop">Utama</a>
+		<a href="#page3" class="ui-btn ui-btn-inline" data-transition="flow">Peranan</a>
+		<a href="#page4" class="ui-btn ui-btn-inline" data-transition="flip">Direktori</a>
+
+  
+	<!--footer -->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#" data-icon="grid" class="ui-btn-active ui-state-persist">Sejarah</a></li>
+				<li><a href="#page3" data-icon="star">Peranan</a></li>
+				<li><a href="#page4" data-icon="gear">Direktori</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div>
+</div>
+<!--Page 3 -->
+<div data-role="page" id="page3">
+<!--Panel-->
+	<div data-role="panel" id="panel1" data-display="overlay">
+	<h3>Senarai Menu</h3>
+	<br />
+		<ul data-role="listview">
+			<li><a href="#page2">Sejarah</a></li>
+			<li><a href="#page3">Peranan</a></li>
+			<li><a href="#page4">Direktori</a></li>
+		</ul>
+	</div>
+	<!--header -->
+	<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="">
+		<a href="#panel1" data-icon="bars" data-icompos="notext">Menu</a>
+		<h3>Peranan</h3>
+	</div>
+		
+	<!--content -->
+	<div role="main" class="ui-content">
+		<!-- <center>
+		<h3>Unit IT</h> </center>
+		<a href="test1.html"> Puan Rozalina Binti Jamil </a>
+		<h4>Ketua Unit IT</h4>
+		<h5> Pegawai Teknologi Maklumat F44 </h5> -->
+		<p> Unit Teknologi Maklumat (IT) adalah satu unit di bawah 
+		Bahagian Pengurusan yang bertanggungjawab dalam pengurusan 
+		teknologi maklumat dan komunikasi (ICT) hospital yang 
+		melibatkan pengurusan sistem rangkaian, penyelenggaraan 
+		dan perolehan aset ICT, pelaksanaan dan pemantauan projek-projek ICT, 
+		bantuan teknikal, latihan dan keselamatan ICT.</p> 
+		<p>Aktiviti utama Unit IT adalah:</P>
+	
+		<!-- Heading -->
+		<div data-role="collapsible-set">
+			<div data-role="collapsible" data-collapsed="true">
+				<h4>Infrastruktur ICT</h4>
+				<p>Mengurus, menyelenggara dan menyelaras infrastruktur ICT hospital;</p>
+			</div>
+		</div>
+		<div data-role="collapsible-set">
+			<div data-role="collapsible" data-collapsed="false">
+				<h4>Projek</h4>
+				<p>Mengurus dan memantau pelaksanaan projek-projek ICT iaitu pelaksanaan 
+				aplikasi Kerajaan Elektronik dan aplikasi Kementerian Kesihatan Malaysia 
+				(KKM);</p>
+			</div>
+		</div>
+		<div data-role="collapsible-set">
+			<div data-role="collapsible" data-collapsed="true">
+				<h4>Teknikal</h4>
+				<p>Mengurus bantuan dan sokongan teknikal iaitu First Level Support dan 
+				Helpdesk berkaitan peralatan, perisian, aplikasi dan rangkaian ICT;</p>
+			</div>
+		</div>
+		<div data-role="collapsible-set">
+			<div data-role="collapsible" data-collapsed="false">
+				<h4>Rangkaian</h4>
+				<p>Mengurus keselamatan data dan rangkaian</p>
+			</div>
+		</div>
+		<div data-role="collapsible-set">
+			<div data-role="collapsible" data-collapsed="true">
+				<h4>Peralatan ICT</h4>	
+				<p>Mengurus perolehan aset ICT dan khidmat peminjaman peralatan ICT;</p>
+			</div>
+		</div>
+		<div data-role="collapsible-set">
+			<div data-role="collapsible" data-collapsed="false">
+				<h4>Sistem</h4>	
+				<p>Merancang dan membangun sistem aplikasi komputer untuk keperluan 
+				dalaman;</p>
+			</div>
+		</div>
+		<div data-role="collapsible-set">
+			<div data-role="collapsible" data-collapsed="true">
+				<h4>Latihan</h4>
+				<p>Mengurus program latihan ICT peringkat hospital dan 
+				Jabatan Kesihatan Negeri Selangor (JKNS); dan</p>
+			</div>
+		</div>
+		<div data-role="collapsible-set">
+			<div data-role="collapsible" data-collapsed="false">
+				<h4>Laman Web</h4>
+				<p>Menyelenggara laman web hospital</p>
+			</div>
+		</div>
+	
+	<!-- <ol> --><!--
+	<ul data-role="listview" data-inset="true">
+		<li>Mengurus, menyelenggara dan menyelaras infrastruktur ICT hospital;</li>
+		<li>Mengurus dan memantau pelaksanaan projek-projek ICT iaitu pelaksanaan 
+		aplikasi Kerajaan Elektronik dan aplikasi Kementerian Kesihatan Malaysia 
+		(KKM);</li>
+		<li>Mengurus bantuan dan sokongan teknikal iaitu First Level Support dan 
+		Helpdesk berkaitan peralatan, perisian, aplikasi dan rangkaian ICT;</li>
+		<li>Mengurus keselamatan data dan rangkaian</li>
+		<li>Mengurus perolehan aset ICT dan khidmat peminjaman peralatan ICT;</li>
+		<li>Merancang dan membangun sistem aplikasi komputer untuk keperluan 
+		dalaman;</li>
+		<li>Mengurus program latihan ICT peringkat hospital dan 
+		Jabatan Kesihatan Negeri Selangor (JKNS); dan</li>
+		<li>Menyelenggara laman web hospital</li>
+	</ul>
+	<br />-->
+	<!-- </ol> -->
+	<!--<a href="#page1">Utama</a>
+	<a href="#page2">Sejarah</a>-->
+	<a href="#page1" class="ui-btn ui-btn-inline" data-transition="turn" 
+	data-direction="reverse">Utama</a>
+	<a href="#page2" class="ui-btn ui-btn-inline" data-transition="fade">Sejarah</a>
+	<a href="#page4" class="ui-btn ui-btn-inline" data-transition="flow">Direktori</a>
+  </div>
+  
+  <!--footer -->
+  <div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#" data-icon="grid" class="ui-btn-active ui-state-persist">Peranan</a></li>
+				<li><a href="#page2" data-icon="star">Sejarah</a></li>
+				<li><a href="#page4" data-icon="gear">Direktori</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div>
+</div>
+<!--Page 4 -->
+<div data-role="page" id="page4">
+<!--Panel-->
+	<div data-role="panel" id="panel1" data-display="overlay">
+	<h3>Senarai Menu</h3>
+	<br />
+		<ul data-role="listview">
+			<li><a href="luar1.html" data-transition="turn">Isi 1</a></li>
+			<li><a href="luar2.html" data-transition="turn">Isi 2</a></li>
+			<li><a href="luar3.html" data-transition="turn">Isi 3</a></li>
+		</ul>
+	</div>
+	<!--header -->
+	<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="">
+		<a href="#panel1" data-icon="bars" data-icompos="notext">Menu</a>
+		<h3>Direktori</h3>
+	</div>
+	<!--content -->
+	<div role="main" class="ui-content">
+		<div data-role="popup" id="d1" id="d2" id="d3" id="d4" id="d5">
+			<a href="tel:+60171234567" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline">Telefon</a>
+			<a href="sms:+60171234567" class="ui-btn ui-icon-action ui-btn-icon-notext ui-corner-all ui-btn-inline">SMS</a>
+			<a href="mailto:abc@moe.gov.my" class="ui-btn ui-icon-mail ui-btn-icon-notext ui-corner-all ui-btn-inline">Pesanan Emel</a>
+		</div>
+		<h3>Unit IT</h>
+		<ul data-role="listview" data-filter="true" data-filter-placeholder="Taipkan Nama">
+			<li>
+				<a href="#d1" data-rel="popup" data transition="slideup">
+				<img src="gambar/sub(m).jpg" width="150">
+				<h3>Encik Nik Azmin Bin Haji Nik Hussain</h3>
+				<p>F54 Ketua Unit</p></a>
+			</li>
+			<li>
+				<a href="#d1" data-rel="popup" data transition="slideup">
+				<img src="gambar/anuarbidin.jpg" width="150">
+				<h3>Encik Anuar Bin Bidin</h3>
+				<p>F52 Penolong Ketua Unit</p></a>
+				<!--<p>
+					<a href="#pop2" class="ui-btn ui-btn-inline" data-rel="popup" data-transition="pop">Maklumat</a>
+					<div data-role="popup" id="pop2" data-dismissible="false" style="max-width:400px;">
+						<div data-role="header">
+							<h3>Maklumat</h3>
+						</div>
+					</div>
+					<div role="main" class="ui-content"></div>
+						<a href="tel:+60171234567" class="ui-btn ui-icon-phone ui-corner-all">Telefon</a>
+						<a href="sms:+60171234567" class="ui-btn ui-icon-action ui-corner-all">SMS</a>
+						<a href="mailto:abc@moe.gov.my" class="ui-btn ui-icon-mail ui-corner-all">Pesanan Emel</a>
+					</div
+				</p>-->
+			</li>
+			<!--Pop-up-->
+			<!--<div role="main" class="ui-content">
+				<div data-role="popup" id="d1">
+					<a href="tel:+60171234567" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline">Telefon</a>
+					<a href="sms:+60171234567" class="ui-btn ui-icon-action ui-btn-icon-notext ui-corner-all ui-btn-inline">SMS</a>
+					<a href="mailto:abc@moe.gov.my" class="ui-btn ui-icon-mail ui-btn-icon-notext ui-corner-all ui-btn-inline">Emel</a>
+				</div>
+				<h3>Senarai Kakitangan</h3>
+				<ul data-role="listview">-->
+			<li>
+				<a href="#d1" data-rel="popup" data transition="slideup">
+				<img src="gambar/aku.jpg" width="150">
+				<h3>Encik Mohammad Hazahasarin Bin Razali</h3>
+				<p>F29 Penolong Pegawai Teknologi Maklumat</p></a>
+			</li>
+			<li>
+				<a href="#d1" data-rel="popup" data transition="slideup">
+				<img src="gambar/MadinKarim.jpg" width="150">
+				<h3>Encik Madin Bin Karim</h3>
+				<p>N22 Ketua Pembantu Tadbir</p></a>
+				<!--<p>
+					<a href="tel:+60171234567" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline">Telefon</a>
+					<a href="sms:+60171234567" class="ui-btn ui-icon-action ui-btn-icon-notext ui-corner-all ui-btn-inline">SMS</a>
+					<a href="mailto:abc@moe.gov.my" class="ui-btn ui-icon-mail ui-btn-icon-notext ui-corner-all ui-btn-inline">Emel</a>
+				</p>-->
+			</li>
+			<li>
+				<a href="#d1" data-rel="popup" data transition="slideup">
+				<img src="gambar/SyarifahNorazuraAnawi.jpg" width="150">
+				<h3>Puan Sharifah Norazura Binti Anawi</h3>
+				<p>N17 Pembantu Tadbir</p></a>
+			</li>
+		</ul>
+		<br />
+		<!--</div>-->
+		<a href="#page1" class="ui-btn ui-btn-inline" data-transition="turn" data-direction="reverse">Utama</a>
+		<a href="#page2" class="ui-btn ui-btn-inline" data-transition="fade">Sejarah</a>
+		<a href="#page3" class="ui-btn ui-btn-inline" data-transition="slideup">Peranan</a>
+	</div>
+    <!--footer -->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#" data-icon="grid" class="ui-btn-active ui-state-persist">Direktori</a></li>
+				<li><a href="#page2" data-icon="star">Sejarah</a></li>
+				<li><a href="#page3" data-icon="gear">Peranan</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div>
+</div>
+</body>
+</html>
+
